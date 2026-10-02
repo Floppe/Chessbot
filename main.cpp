@@ -175,9 +175,9 @@ int main() {
 
             std::chrono::steady_clock::time_point tp = std::chrono::steady_clock::now(); 
 
-
-            u64 nodeCount = perft(board, 0, depth, captures, promotions, castles, enPassants, checks, checkmates);
             std::cout << "Perft in progress" << std::endl;
+            u64 nodeCount = perft(board, 0, depth, captures, promotions, castles, enPassants, checks, checkmates);
+            
 
             auto end = std::chrono::high_resolution_clock::now();
 
@@ -218,4 +218,4 @@ int main() {
     return 0;
 }
 
-// g++ main.cpp evaluation.cpp moveGeneration.cpp search.cpp -o bot
+// C:\msys64\ucrt64\bin\g++.exe attack.cpp constants.h main.cpp evaluation.cpp moveGen.cpp search.cpp misc.cpp globals.cpp makeMove.cpp movePicker.cpp -o bot
