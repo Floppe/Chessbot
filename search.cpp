@@ -8,6 +8,7 @@
 #include <ctime>
 #include <chrono>
 #include <atomic>
+#include <cassert>
 #include "moveGen.h"
 #include "evaluation.h"
 #include "search.h"
